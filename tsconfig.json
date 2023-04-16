@@ -1,0 +1,39 @@
+{
+  "incremental": true,
+  "compilerOptions": {
+    "target": "es2022",
+
+    "lib": ["es2022"],
+
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": true,
+    "sourceMap": true,
+
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+
+    "experimentalDecorators": true,
+
+    "baseUrl": ".",
+    "outDir": "./dist"
+  },
+
+  "include": ["src/**/*.ts", "test/**/*.ts"]
+}

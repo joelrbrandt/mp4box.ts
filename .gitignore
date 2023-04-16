@@ -1,0 +1,15 @@
+# Node dependencies, logs, etc.
+node_modules
+.npm
+npm-debug.log
+
+# TypeScript build output
+dist/
+*.tsbuildinfo
+
+# VS Code projects and workspaces
+.vscode
+*.code-workspace
+
+# OS X temporary files
+.DS_Store

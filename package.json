@@ -1,0 +1,94 @@
+{
+  "name": "@joelrbrandt/mp4box.ts",
+  "version": "0.0.1-pre.2",
+  "description": "mp4box.js with a TS wrapper",
+  "type": "module",
+  "exports": {
+    ".": "./dist/src/main.js"
+  },
+  "types": "dist/src/main.d.ts",
+  "files": [
+    "dist/",
+    "src/",
+    "test/"
+  ],
+  "scripts": {
+    "build": "tsc --incremental",
+    "build:watch": "tsc --watch --pretty",
+    "clean": "rm -rf ./dist",
+    "pretty": "prettier -c .",
+    "lint": "eslint .",
+    "test": "mocha --forbid-only --enable-source-maps dist/test/**/*.js"
+  },
+  "author": {
+    "name": "Joel Brandt",
+    "email": "joelrbrandt@gmail.com",
+    "url": "https://joelbrandt.com/"
+  },
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joelrbrandt/mp4box.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "~4.3.0",
+    "@types/mocha": "~10.0.1",
+    "@types/node": "~18.15.11",
+    "@typescript-eslint/eslint-plugin": "~5.57.0",
+    "@typescript-eslint/parser": "~5.57.0",
+    "chai": "~4.3.4",
+    "eslint": "~8.37.0",
+    "eslint-config-prettier": "~8.8.0",
+    "mocha": "~10.2.0",
+    "prettier": "2.8.7",
+    "typescript": "5.0.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
+    ],
+    "ignorePatterns": [
+      "node_modules/",
+      "build/",
+      "deploy/",
+      "dist/"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 2022,
+      "sourceType": "module"
+    },
+    "globals": {},
+    "env": {
+      "browser": true,
+      "node": true,
+      "es2020": true
+    },
+    "rules": {
+      "no-console": "off",
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/ban-ts-ignore": "off",
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": [
+        "error",
+        {
+          "functions": false
+        }
+      ],
+      "@typescript-eslint/no-inferrable-types": [
+        "warn",
+        {
+          "ignoreParameters": true
+        }
+      ],
+      "@typescript-eslint/no-unused-vars": "error",
+      "@typescript-eslint/explicit-module-boundary-types": [
+        "error"
+      ]
+    }
+  }
+}
