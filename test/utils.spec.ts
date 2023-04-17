@@ -3,7 +3,7 @@ import { expect } from "chai";
 
 import { add } from "../src/utils.js";
 
-describe("main", () => {
+describe("utils", () => {
   it("adds", () => {
     expect(add(1, 2)).to.equal(3);
   });

@@ -1,3 +1,3 @@
-export * from "../vendor/mp4box.all.js";
+export * from "#mp4box";
 
 export * from "./utils.js";

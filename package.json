@@ -1,6 +1,6 @@
 {
   "name": "@joelrbrandt/mp4box.ts",
-  "version": "0.0.1-pre.2",
+  "version": "0.0.1-pre.3",
   "description": "mp4box.js with a TS wrapper",
   "type": "module",
   "exports": {
@@ -10,10 +10,14 @@
   "files": [
     "dist/",
     "src/",
-    "test/"
+    "test/",
+    "vendor/"
   ],
+  "imports": {
+    "#mp4box": "./vendor/mp4box.all.js"
+  },
   "scripts": {
-    "build": "tsc --incremental && cp -pr ./vendor ./dist",
+    "build": "tsc --incremental",
     "build:watch": "tsc --watch --pretty",
     "clean": "rm -rf ./dist",
     "pretty": "prettier -c .",
