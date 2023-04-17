@@ -13,7 +13,7 @@
     "test/"
   ],
   "scripts": {
-    "build": "tsc --incremental",
+    "build": "tsc --incremental && cp -pr ./vendor ./dist",
     "build:watch": "tsc --watch --pretty",
     "clean": "rm -rf ./dist",
     "pretty": "prettier -c .",
@@ -54,7 +54,8 @@
       "node_modules/",
       "build/",
       "deploy/",
-      "dist/"
+      "dist/",
+      "vendor/*.js"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {

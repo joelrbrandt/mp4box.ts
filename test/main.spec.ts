@@ -1,7 +1,7 @@
 import "mocha";
 import { expect } from "chai";
 
-import { add } from "../src/main.js";
+import { add } from "../src/utils.js";
 
 describe("main", () => {
   it("adds", () => {
