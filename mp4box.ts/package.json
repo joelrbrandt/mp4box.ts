@@ -1,6 +1,6 @@
 {
   "name": "@joelrbrandt/mp4box.ts",
-  "version": "0.0.1-pre.3",
+  "version": "1.0.1",
   "description": "mp4box.js with a TS wrapper",
   "type": "module",
   "exports": {
@@ -10,7 +10,6 @@
   "files": [
     "dist/",
     "src/",
-    "test/",
     "vendor/"
   ],
   "imports": {
@@ -35,17 +34,13 @@
     "url": "https://github.com/joelrbrandt/mp4box.ts"
   },
   "devDependencies": {
-    "@types/chai": "~4.3.0",
-    "@types/mocha": "~10.0.1",
-    "@types/node": "~18.15.11",
-    "@typescript-eslint/eslint-plugin": "~5.57.0",
-    "@typescript-eslint/parser": "~5.57.0",
-    "chai": "~4.3.4",
-    "eslint": "~8.37.0",
-    "eslint-config-prettier": "~8.8.0",
-    "mocha": "~10.2.0",
-    "prettier": "2.8.7",
-    "typescript": "5.0.2"
+    "@types/node": "~20.6.3",
+    "@typescript-eslint/eslint-plugin": "~6.7.2",
+    "@typescript-eslint/parser": "~6.7.2",
+    "eslint": "~8.49.0",
+    "eslint-config-prettier": "~9.0.0",
+    "prettier": "3.0.3",
+    "typescript": "5.2.2"
   },
   "eslintConfig": {
     "extends": [
